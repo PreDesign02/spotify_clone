@@ -28,8 +28,7 @@ SECRET_KEY = 'django-insecure-z3tmg)j&h7kv*fgsym!j663-n#!m=e2_0@v071lc=bl7m0omh5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['spotify_clone.onrender.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['spotify-clone-p0y0.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -60,7 +59,7 @@ TEMPLATES = [
     {
          'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates'],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -119,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [BASE_DIR / 'static']
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
