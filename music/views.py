@@ -5,13 +5,13 @@ from .models import Artist, Album, Song
 from .serializers import ArtistSerializer, AlbumSerializer, SongSerializer
 
 class ArtistViewSet(viewsets.ModelViewSet):
-    queryset = Artist.object.all()
+    queryset = Artist.objects.all()
     serializer_class= ArtistSerializer
     
 class AlbumViewSet(viewsets.ModelViewSet):
-    queryset = Album.object.all()
+    queryset = Album.objects.all()
     serializer_class= AlbumSerializer
 
 class SongViewSet(viewsets.ModelViewSet):
-    queryset = Song.object.all()
+    queryset = Song.objects.all()
     serializer_class= SongSerializer
