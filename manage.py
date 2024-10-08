@@ -16,6 +16,13 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+    
+    #get the port env variabeL OR default to 1000
+    port=os.environ.get('PORT', '1000')
+    
+    #if running server command, specify the port
+    if sys.argv[1]== 'runserver':
+        sys.argv[2]== '0.0.0.0:' + port
 
 
 if __name__ == '__main__':
