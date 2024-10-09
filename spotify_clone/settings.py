@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z3tmg)j&h7kv*fgsym!j663-n#!m=e2_0@v071lc=bl7m0omh5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['spotify-clone-p0y0.onrender.com', 'localhost', '127.0.0.1']
 
